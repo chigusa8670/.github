@@ -1,0 +1,35 @@
+name: 調査・方針検討
+description: 方式や採否などを判断するための調査・比較・検証を記録する。
+labels: ["type:research"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        登録時に調査結果は求めない。秘密情報・個人情報は記載しない。
+  - type: textarea
+    id: question
+    attributes:
+      label: 調べたい問い・判断したいこと
+      description: 何を調べ、その結果で何を判断するかを記録する。
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 調査範囲・対象外
+      description: 調査対象と、今回調べない範囲を記録する。
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 完了条件・検証方法
+      description: 問いへの回答を確かめる方法と、調査を終える区切りを記録する。
+  - type: textarea
+    id: references
+    attributes:
+      label: 参照する仕様・根拠
+      description: 文書パス・節・要件 ID、調査資料を示す。既存仕様がない場合や未確定な内容は、その旨を記録する。
+  - type: textarea
+    id: related
+    attributes:
+      label: 関連 Issue・関係の理由
+      description: 親子・依存・単なる関連を区別する。親子・依存は本文だけでなく、作成後に専用の関係を設定する。

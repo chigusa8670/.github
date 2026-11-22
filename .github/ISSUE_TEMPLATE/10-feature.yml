@@ -1,0 +1,35 @@
+name: 機能追加・改善
+description: 新しい機能、未実装機能、文書・開発環境を含む改善を記録する。
+labels: ["type:feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        秘密情報・個人情報は記載しない。
+  - type: textarea
+    id: goal
+    attributes:
+      label: 実現したいこと・必要な理由
+      description: 現在と実現したい状態、必要な理由を記録する。既存仕様の未実装部分か、新しい提案かを示す。
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 対象範囲・対象外
+      description: 今回変更する範囲と、含めない範囲を記録する。
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 完了条件・検証方法
+      description: 観測できる結果とその確かめ方を記録する。
+  - type: textarea
+    id: references
+    attributes:
+      label: 参照する仕様・根拠
+      description: 文書パス・節・要件 ID と今回の変更内容を示す。既存仕様がない場合や未確定な内容は、その旨を記録する。
+  - type: textarea
+    id: related
+    attributes:
+      label: 関連 Issue・関係の理由
+      description: 親子・依存・単なる関連を区別する。親子・依存は本文だけでなく、作成後に専用の関係を設定する。

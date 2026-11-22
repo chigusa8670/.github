@@ -1,0 +1,52 @@
+name: 不具合の報告
+description: 合意済みの仕様と異なる動作を記録する。
+labels: ["type:bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        原因の特定は登録・着手の条件にしない。秘密情報・個人情報は記載しない。
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の動作
+      description: 起きた現象と影響を記録する。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待する動作
+      description: 本来どのような結果になるかを記録する。
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 再現手順・観測情報
+      description: 操作・入力・発生条件を記録する。再現できない場合は、調査を始められるログや観測事実を示す。
+  - type: textarea
+    id: environment
+    attributes:
+      label: 環境・対象バージョン
+      description: 発生したアプリのバージョン・コミット、OS など、調査に必要な情報を記録する。
+  - type: textarea
+    id: scope
+    attributes:
+      label: 対象範囲・対象外
+      description: 今回修正する範囲と、含めない範囲を記録する。
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 完了条件・検証方法
+      description: 修正後の結果とその確かめ方を記録する。
+  - type: textarea
+    id: references
+    attributes:
+      label: 参照する仕様・根拠
+      description: 期待する動作の根拠となる基準文書のパス・節・要件 ID を示す。コード・調査資料は現状確認用として区別し、仕様が未確定なら明記する。
+  - type: textarea
+    id: related
+    attributes:
+      label: 関連 Issue・関係の理由
+      description: 親子・依存・単なる関連を区別する。親子・依存は本文だけでなく、作成後に専用の関係を設定する。
